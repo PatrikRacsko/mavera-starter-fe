@@ -3,11 +3,11 @@ import { UserService } from './userService'
 import {HTTPClient} from '../http'
 
 
-describe.only('userService', () => {
+describe('userService', () => {
     beforeAll(() => {
         HTTPClient.post = vi.fn().mockResolvedValue({ data: { token: '1234' } });
     });
-    
+
       afterEach(() => {
         vi.clearAllMocks()
       })
