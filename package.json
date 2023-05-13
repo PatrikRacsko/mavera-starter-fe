@@ -9,13 +9,13 @@
     "preview": "vite preview",
     "test:unit": "vitest run",
     "test:e2e": "cypress run --e2e",
-    "test:e2e:dev": "start-server-and-test 'vite dev --port 5173' http://localhost:5173 'cypress open --e2e'",
+    "test:e2e:dev": "start-server-and-test 'vite dev --port 5173' http://localhost:5173 'cypress run --e2e'",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "prepare": "husky install",
-    "quality-pipe": "npm run test:unit && npm run test:e2e:dev && npm run test:e2e"
+    "quality-pipe": "npm run test:unit && npm run test:e2e:dev"
   },
   "dependencies": {
     "@vueuse/core": "^10.1.2",
