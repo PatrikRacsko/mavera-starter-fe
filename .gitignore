@@ -21,9 +21,13 @@ coverage
 .vscode/*
 !.vscode/extensions.json
 .idea
+.vscode
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 /pnpm-lock.yaml
+/yarn.lock
+/package-lock.json
+.env
