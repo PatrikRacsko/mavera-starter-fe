@@ -2,10 +2,8 @@
   <RouterView />
 </template>
 
-
 <script setup lang="ts">
-	const variable = 'formaATmeee';
+const variable = 'formaATmeee'
 
-				console.log(variable);
-
+console.log(variable)
 </script>
