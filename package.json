@@ -51,7 +51,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "eslint --ext .js,.vue src"
+      "pre-commit": "eslint --ext .js,.vue src",
+      "post-commit": "git update-index --again"
     }
   },
   "lint-staged": {

@@ -1,9 +1,7 @@
 <template>
   <div class="greetings">
     <h1 class="cyan">Mavera UI starter</h1>
-    <h3>
-      This is a starter template for Vue 3 with Vite, Vue Router, TypeScript, Pinia
-    </h3>
+    <h3>This is a starter template for Vue 3 with Vite, Vue Router, TypeScript, Pinia</h3>
   </div>
 </template>
 
