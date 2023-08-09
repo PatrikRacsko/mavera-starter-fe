@@ -18,8 +18,8 @@ const toggleSwitch = () => {
 
 <template>
   <div class="switcher-container" @click="toggleSwitch">
-    <input v-model="isToggled" type="checkbox" class="hidden-switch" :disabled="isDisabled" />
-    <div :class="{ 'material-switch': true, 'is-on': isToggled, 'is-disabled': isDisabled }">
+    <input v-model="isToggled" type="checkbox" class="hidden-switch" :disabled="disabled" />
+    <div :class="{ 'material-switch': true, 'is-on': isToggled, 'is-disabled': disabled }">
       <div class="slider">
         <div v-for="i in 6" :key="i" class="dot"></div>
       </div>
@@ -50,7 +50,7 @@ const toggleSwitch = () => {
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* To handle the space on both sides */
+  justify-content: space-between;
 }
 
 .material-switch.is-on {
@@ -58,17 +58,17 @@ const toggleSwitch = () => {
 }
 
 .material-switch .slider {
-  width: 15px; /* Adjusted width for new size */
-  height: 25px; /* Adjusted height for new size */
+  width: 15px;
+  height: 25px;
   background-color: white;
-  border-radius: 7px; /* Adjusted to maintain the rectangle shape */
+  border-radius: 7px;
   position: relative;
   transition: transform 0.3s;
   margin-left: 5px;
 }
 
 .material-switch.is-on .slider {
-  transform: translateX(35px); /* Adjusted translation to center the slider */
+  transform: translateX(35px);
 }
 
 .material-switch.is-disabled {
@@ -76,14 +76,13 @@ const toggleSwitch = () => {
 }
 
 .dot {
-  width: 2px; /* Adjusted dot size */
+  width: 2px;
   height: 2px;
   background-color: #b0b0b0;
   border-radius: 50%;
   position: absolute;
 }
 
-/* Dots positioning */
 .dot:nth-child(1) {
   top: 4px;
   left: 4px;
