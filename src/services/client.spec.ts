@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { type FetchParams, type FetchOptions, type FetchResponse, useFetch } from './client'
 
-describe.only('Client Service', () => {
+describe('Client Service', () => {
   const mockResponse = { data: { name: 'John' }, error: null }
 
   beforeEach(() => {
